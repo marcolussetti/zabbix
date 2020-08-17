@@ -36,7 +36,13 @@ This template was tested on:
  GRANT SELECT ON v$log TO zabbix_mon;
  GRANT SELECT ON v$archive_dest TO zabbix_mon;
  GRANT SELECT ON v$asm_diskgroup TO zabbix_mon;
+ GRANT SELECT ON v$pdbs TO zabbix_mon;
+ GRANT SELECT ON v$parameter TO zabbix_mon;
+ GRANT SELECT ON v$sort_segment TO zabbix_mon;
+ GRANT SELECT ON dba_temp_files TO zabbix_mon;
+ GRANT SELECT ON dba_free_space TO zabbix_mon;
  GRANT SELECT ON sys.dba_data_files TO zabbix_mon;
+ GRANT SELECT ON sys.dba_temp_files TO zabbix_mon;
  GRANT SELECT ON DBA_TABLESPACES TO zabbix_mon;
  GRANT SELECT ON DBA_TABLESPACE_USAGE_METRICS TO zabbix_mon;
  GRANT SELECT ON DBA_USERS TO zabbix_mon;
